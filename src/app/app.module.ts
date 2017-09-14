@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateService } from '@ngx-translate/core';
-import { AgmCoreModule } from '@agm/core';
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -51,12 +50,7 @@ export type StoreType = {
     NgaModule.forRoot(),
     NgbModule.forRoot(),
     PagesModule,
-    routing,
-    AgmCoreModule.forRoot({
-      // apiKey: 'AIzaSyBYyODuGdlqjlyj0RPu_F_BCwnseahh3_Y',
-      apiKey: 'AIzaSyB_1JiSiTJYzzno0byB0yaR1v9Wpu0odBo',
-      libraries: ['places']
-    })
+    routing
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     APP_PROVIDERS,
